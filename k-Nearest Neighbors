@@ -1,0 +1,26 @@
+k-Nearest Neighbors
+
+Pros: High accuracy, insensitive to outliers, no assumptions about data
+Cons: Computationally expensive, requires a lot of memory
+Works with: Numeric values, nominal values
+
+Here is how K-Nearest Neighbors works: 
+we know what class each piece of the data should fall into.
+When we’re given a new piece of data without a label, we compare that new piece of
+data to the existing data, every piece of existing data. We then take the most similar
+pieces of data (the nearest neighbors) and look at their labels. We look at the top k
+most similar pieces of data from our known dataset; this is where the k comes from. (k
+is an integer and it’s usually less than 20.) Lastly, we take a majority vote from the k
+most similar pieces of data, and the majority is the new class we assign to the data we
+were asked to classify.
+
+General approach to kNN
+1. Collect: Any method.
+2. Prepare: Numeric values are needed for a distance calculation. A structured data format is best.
+3. Analyze: Any method.
+4. Train: Does not apply to the kNN algorithm.
+5. Test: Calculate the error rate.
+6. Use: This application needs to get some input data and output structured numeric
+values. Next, the application runs the kNN algorithm on this input data and
+determines which class the input data should belong to. The application then
+takes some action on the calculated class.
